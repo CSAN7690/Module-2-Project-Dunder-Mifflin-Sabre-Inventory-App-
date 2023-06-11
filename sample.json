@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Dunder Mifflin Classic Paper",
+        "priceInCents": 999,
+        "inStock": true,
+        "color": "white"
+    },
+    {
+        "name": "Dunder Mifflin Mousepad",
+        "priceInCents": 599,
+        "inStock": true,
+        "type": "office accessory"
+    },
+    {
+        "name": "Dunder Mifflin Coffee Mug",
+        "priceInCents": 799,
+        "inStock": false,
+        "design": "World's Best Boss"
+    },
+    {
+        "name": "Dunder Mifflin Dundie Award",
+        "priceInCents": 2499,
+        "inStock": true,
+        "category": "office decor"
+    },
+    {
+        "name": "Dunder Mifflin Hoodie",
+        "priceInCents": 1999,
+        "inStock": true,
+        "size": "XL"
+    },
+    {
+        "name": "Dunder Mifflin Scranton Branch T-Shirt",
+        "priceInCents": 1499,
+        "inStock": true,
+        "color": "navy blue"
+    }
+]
