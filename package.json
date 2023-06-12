@@ -4,9 +4,17 @@
   "description": "Welcome to the Dunder Mifflin/Sabre project! This application allows you to manage a list of items, perform actions like creating, deleting, and updating items, and even simulate a shopping cart functionality. Below, you will find the setup instructions and a guide/cheatsheet to help you navigate the application.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "list": "node index.js list",
+    "view": "node index.js view",
+    "update": "node index.js update",
+    "delete": "node index.js delete",
+    "create": "node index.js create"
   },
   "keywords": [],
   "author": "Chris Sanchez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
 }
