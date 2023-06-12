@@ -10,15 +10,16 @@ const rl = readline.createInterface({
 });
 
 // Read the JSON data from the file
-let data = [];
+/* let data = [];
 try {
     data = JSON.parse(fs.readFileSync(dataPath));
 } catch (error) {
     console.error('Error reading data from file:', error);
 }
+*/
 
 // Function to save data back to the file
-const saveDataToFile = () => {
+saveDataToFile = () => {
     fs.writeFileSync('./data.json', JSON, stringify(data, null, 2));
 };
 
@@ -48,20 +49,13 @@ function createNewItem() {
 
 //// Function to delete an item `␡`
 function deleteItem() {
-    //Prompt user for the item ID to delete
-    const itemID = prompt("Enter the ID of the item to delete");
-
-    // Fin the index of the item w/ the provided ID in the data array
-    const itemIndex = data.findIndex((item) => item.id === itemId);
-
-    if (itemIndex !== -1) {
-        //Remove the item from the data arrray
-        data.splice(itemIndex, 1);
-        console.log("Item deleted successfully!🫡");
-    } else {
-        console.log("Item not found!😩");
-    }
+    rl.question("Enter the ID of the item to delete: ", (itemID) => {
+        // Handle deletion logic here using the provided itemID
+        console.log(`Deleting item with ID: ${itemID}`);
+        rl.close();
+    });
 }
+
 deleteItem();
 
 //Function to list all items 📝
