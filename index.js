@@ -1,6 +1,7 @@
 const { error } = require('console');
 const fs = require('fs');
 const readline = require('readline');
+const chalk = require('chalk');
 
 const dataPath = './data.json';
 
